@@ -2,27 +2,23 @@
  * Autor : Loester Franco Botelho - JAVA
  */
 
-package devs2blu.Aula09.Exerc09nv2.LIVRO_LO.Livro;
+package devs2blu.Aula09.Exerc09nv2.livro2;
 
-public class Editora {
+public class Autor {
 
 	private final Integer id;
 	private final String nome;
 	private final String ativo;
 
-	public Editora() {
+	public Autor() {
 		this(null, null, "S");
 	}
 
-	public Editora(Integer id) {
-		this(id, null, "S");
-	}
-
-	public Editora(Integer id, String nome) {
+	public Autor(Integer id, String nome) {
 		this(id, nome, "S");
 	}
 
-	public Editora(Integer id, String nome, String ativo) {
+	public Autor(Integer id, String nome, String ativo) {
 		this.id = id;
 		this.nome = nome;
 		this.ativo = ativo != null ? ativo : "S";
@@ -46,7 +42,7 @@ public class Editora {
 
 	@Override
 	public String toString() {
-		return String.format("Editora [id=%s, nome=%s, ativo=%s]", 
+		return String.format("Autor [id=%s, nome=%s, ativo=%s]", 
 				FuncoesUteis.adicionarLetraAEsquerda(id,3,"0"), 
 				getNome(), 
 				getAtivo());
@@ -54,12 +50,12 @@ public class Editora {
 
 	public static class Factory {
 
-		public static Editora criarEditora(Integer id, String nome) {
-			return new Editora(id, nome);
+		public static Autor criarAutor(Integer id, String nome) {
+			return new Autor(id, nome);
 		}
 
-		public static Editora criarEditora(Integer id, String nome, String ativo) {
-			return new Editora(id, nome, ativo);
+		public static Autor criarAutor(Integer id, String nome, String ativo) {
+			return new Autor(id, nome, ativo);
 		}
 	}
 
@@ -83,14 +79,14 @@ public class Editora {
 			return this;
 		}
 
-		public Editora build() {
-			return new Editora(this.id, this.nome, this.ativo);
+		public Autor build() {
+			return new Autor(this.id, this.nome, this.ativo);
 		}
 
 		@Override
 		public String toString() {
 			return String.format("Builder{id=%s, nome=%s, ativo=%s}", 
-					FuncoesUteis.adicionarLetraAEsquerda(id,3,"0"),
+					FuncoesUteis.adicionarLetraAEsquerda(id,3,"0"), 
 					nome, 
 					ativo);
 		}

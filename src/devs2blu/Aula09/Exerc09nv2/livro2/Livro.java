@@ -2,7 +2,7 @@
  * Autor : Loester Franco Botelho - JAVA
  */
 
-package devs2blu.Aula09.Exerc09nv2.LIVRO_LO.Livro;
+package devs2blu.Aula09.Exerc09nv2.livro2;
 
 import java.util.ArrayList;
 import java.util.List;

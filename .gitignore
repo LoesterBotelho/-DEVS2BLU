@@ -1,5 +1,9 @@
 # Ignorar arquivos compilados .class
 *.class
+*.zip
+*.rar
+*.7z
+
 
 # Ignorar diretórios de build e binários
 /bin/

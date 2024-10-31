@@ -19,8 +19,7 @@ public class Teste {
 		Professor prof01 = new Professor( new BigDecimal("7000.0") , new BigInteger("74982164") , "Heloisa" );
 		Professor prof02 = new Professor( new BigDecimal("7000.0") , new BigInteger("74982164") , "Abelardo" );
 		Professor prof03 = new Professor( new BigDecimal("7000.0") , new BigInteger("74982164") , "Vilson" );
-		
-	
+			
 		Aluno aluno01 = new Aluno("Loester");
 		Aluno aluno02 = new Aluno("Antonio");
 		Aluno aluno03 = new Aluno("Leandro");

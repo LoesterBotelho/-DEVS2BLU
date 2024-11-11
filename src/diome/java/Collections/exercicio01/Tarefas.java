@@ -27,7 +27,7 @@ public class Tarefas {
 
 		for (var tarefa : listaTarefas) {
 
-			if (tarefa.getNomeTarefa().toString() == descricao) {
+			if (tarefa.getNomeTarefa().equals(descricao)) {
 				tarefasParaRemover.add(tarefa);
 			}
 
